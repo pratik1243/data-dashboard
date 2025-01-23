@@ -1,0 +1,16 @@
+@mixin flexProps($displayFlex, $alignItem, $justifyContent) {
+  display: $displayFlex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+
+@mixin cardProps($padding) {
+  box-shadow: 0px 0px 5px 1px #00000026;
+  padding: $padding;
+  border-radius: 8px;
+}
+
+@mixin textProps($fontWeight, $fontSize) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+}
