@@ -1,29 +1,39 @@
 @import "./mixins";
 
 .data-card-section {
-  @include cardProps(20px);
+  @include cardProps(20px, $white-color);
   margin-bottom: 30px;
 
+  .status-tab-sec {
+    @include gridProps(repeat(4, 1fr), 26px);
+    margin-bottom: 18px;
+
+    .status-tab {
+      border-radius: 8px;
+      padding: 5px 12px;
+      width: fit-content;
+      @include textProps(500, 12px, #fff);
+    }
+  }
+
   .data-inner-card-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 26px;
+    @include gridProps(repeat(4, 1fr), 26px);
   }
 }
 
 .data-card {
-  @include cardProps(13px);
+  @include cardProps(13px, $white-color);
 
   .data-project-sec {
     @include flexProps(flex, center, space-between);
 
     .id-txt {
-      @include textProps(700, 13.5px);
+      @include textProps(700, 13.5px, unset);
     }
 
     .project-name {
       @include flexProps(inline-flex, center, unset);
-      @include textProps(700, 13.5px);
+      @include textProps(700, 13.5px, unset);
 
       img {
         margin-right: 6px;
@@ -38,7 +48,7 @@
 
     .date-txt {
       @include flexProps(flex, center, unset);
-      @include textProps(500, 13.5px);
+      @include textProps(500, 13.5px, unset);
 
       img {
         margin-right: 6px;
@@ -52,7 +62,7 @@
 
     .owner-sec-txt {
       @include flexProps(flex, center, unset);
-      @include textProps(500, 13.5px);
+      @include textProps(500, 13.5px, unset);
 
       img {
         margin-right: 5px;
@@ -61,11 +71,30 @@
 
     .file-txt {
       @include flexProps(inline-flex, center, unset);
-      @include textProps(700, 13.5px);
+      @include textProps(700, 13.5px, unset);
 
       img {
         margin-right: 4px;
       }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .data-card-section {
+    .data-inner-card-section {
+      @include gridProps(repeat(3, 1fr), 26px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .data-card-section {
+    .status-tab-sec {
+      @include gridProps(repeat(2, 1fr), 26px);
+    }
+    .data-inner-card-section {
+      @include gridProps(repeat(2, 1fr), 26px);
     }
   }
 }

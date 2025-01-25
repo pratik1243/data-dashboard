@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const NavBar = () => {
   return (
-    <div className='navbar-section'>NavBar</div>
-  )
-}
+    <div className="navbar-section">
+      <span className="nav-head-txt">TECHYON</span>
+    </div>
+  );
+};
 
-export default NavBar
+export default NavBar;

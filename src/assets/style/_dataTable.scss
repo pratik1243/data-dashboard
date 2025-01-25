@@ -10,46 +10,14 @@
     .table-head {
       .table-cell {
         @include tableCellProps(15px 13px);
-        @include textProps(600, 14px);
+        @include textProps(600, 14.5px, unset);
       }
     }
 
     .table-row {
       .table-cell {
         @include tableCellProps(10px 13px);
-        @include textProps(400, 14px);
-
-        &.success {
-          @include statusProps(#4caf50);
-        }
-
-        &.info {
-          @include statusProps(#4A90E2);
-        }
-
-        &.info2{
-          @include statusProps(#3B78A3);
-        }
-
-        &.secondary {
-          @include statusProps(#B0B0B0);
-        }
-
-        &.secondary2 {
-          @include statusProps(#808080);
-        }
-
-        &.error{
-          @include statusProps(#F42E2E);
-        }
-
-        &.warning{
-          @include statusProps(#CAC000);
-        }
-
-        &.dark{
-          @include statusProps(#3E4B4F);
-        }
+        @include textProps(400, 14px, unset);       
       }
     }
   }

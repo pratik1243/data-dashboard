@@ -1,18 +1,23 @@
+
+@import "./variables";
+
 @mixin flexProps($displayFlex, $alignItem, $justifyContent) {
   display: $displayFlex;
   align-items: $alignItem;
   justify-content: $justifyContent;
 }
 
-@mixin cardProps($padding) {
+@mixin cardProps($padding, $backgroundColor) {
   box-shadow: 0px 0px 5px 1px #00000026;
   padding: $padding;
   border-radius: 8px;
+  background-color: $backgroundColor;
 }
 
-@mixin textProps($fontWeight, $fontSize) {
+@mixin textProps($fontWeight, $fontSize, $color) {
   font-weight: $fontWeight;
   font-size: $fontSize;
+  color: $color;
 }
 
 @mixin tableCellProps($padding) {
@@ -24,7 +29,27 @@
 }
 
 @mixin statusProps($backgroundColor) {
-  color: #fff;
+  color: $white-color !important;
   text-align: center !important;
   background-color: $backgroundColor;
+}
+
+@mixin buttonProps($backgroundColor, $padding, $marginLeft, $marginRight, $border) {
+  outline: none;
+  cursor: pointer;
+  border-width: 0px;
+  padding: $padding;
+  color: $white-color;
+  font-size: 13.7px;
+  border-radius: 5px;
+  border: $border;
+  margin-left: $marginLeft;
+  margin-right: $marginRight;
+  background-color: $backgroundColor;
+}
+
+@mixin gridProps($columns, $gap){
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
 }

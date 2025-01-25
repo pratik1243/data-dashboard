@@ -1,1 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* cyrillic-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCm3FwrK3iLTcvnUwkT9nA2.woff2") format("woff2");
+}
+/* cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCm3FwrK3iLTcvnUwAT9nA2.woff2") format("woff2");
+}
+/* greek-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCm3FwrK3iLTcvnUwgT9nA2.woff2") format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCm3FwrK3iLTcvnUwcT9nA2.woff2") format("woff2");
+}
+/* vietnamese */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCm3FwrK3iLTcvnUwsT9nA2.woff2") format("woff2");
+}
+/* latin-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCm3FwrK3iLTcvnUwoT9nA2.woff2") format("woff2");
+}
+/* latin */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCm3FwrK3iLTcvnUwQT9g.woff2") format("woff2");
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCo3FwrK3iLTcvvYwYL8g.woff2") format("woff2");
+}
+/* cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCo3FwrK3iLTcvmYwYL8g.woff2") format("woff2");
+}
+/* greek-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCo3FwrK3iLTcvuYwYL8g.woff2") format("woff2");
+}
+/* greek */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCo3FwrK3iLTcvhYwYL8g.woff2") format("woff2");
+}
+/* vietnamese */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCo3FwrK3iLTcvtYwYL8g.woff2") format("woff2");
+}
+/* latin-ext */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCo3FwrK3iLTcvsYwYL8g.woff2") format("woff2");
+}
+/* latin */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/UcCo3FwrK3iLTcviYwY.woff2") format("woff2");
+}
