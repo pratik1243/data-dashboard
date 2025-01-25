@@ -10,6 +10,25 @@
   left: 0px;
   box-shadow: 0px 4px 4px 0px #00000099;
   z-index: 1500;
+  padding: 17px 2px;
+  text-align: center;
+
+  .side-menu-item {
+    margin-bottom: 16px;
+
+    &:first-child img {
+      height: 14px;
+    }
+
+    &:nth-child(2) img {
+      height: 23px;
+    }
+
+    img {
+      height: 20px;
+      cursor: pointer;
+    }
+  }
 }
 
 .navbar-section {
@@ -17,12 +36,47 @@
   background-color: $brand-color;
   top: 0px;
   right: 0px;
-  width: 100%;
   left: 46px;
-  padding: 13px;
+  padding: 8.5px 17px;
   z-index: 1400;
+  @include flexProps(flex, center, space-between);
 
   .nav-head-txt {
     @include textProps(700, 20px, $white-color);
+  }
+
+  .nav-menu-list-sec {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    @include flexProps(flex, center, unset);
+
+    li {
+      margin-right: 23px;
+      cursor: pointer;
+
+      img {
+        height: 21px;
+      }
+
+      .nav-profile-btn {
+        height: 32px;
+      }
+
+      .notification-btn {
+        @include buttonProps(#7a89a3, 4px 6px, unset, unset, 1px solid #bfbdbd);
+        position: relative;
+
+        .badge {
+          position: absolute;
+          top: -4px;
+          right: -11px;
+          background-color: red;
+          font-size: 8px;
+          padding: 0.8px 2px;
+          border-radius: 7px;
+        }
+      }
+    }
   }
 }
