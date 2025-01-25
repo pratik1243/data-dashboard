@@ -3,108 +3,69 @@
 .data-card-section {
   @include cardProps(20px);
   margin-bottom: 30px;
-}
 
-.data-inner-card-section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 26px;
+  .data-inner-card-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+  }
 }
 
 .data-card {
   @include cardProps(13px);
-}
 
-.data-card .date-section {
-  margin-bottom: 14px;
-  padding-bottom: 23px;
-  border-bottom: 1px solid #e7e6e6;
-}
+  .data-project-sec {
+    @include flexProps(flex, center, space-between);
 
-.progress-bar-section {
-  @include flexProps(flex, center, unset);
-  margin: 23px 0px;
-}
+    .id-txt {
+      @include textProps(700, 13.5px);
+    }
 
-.progress-bar-section .progress-num-txt {
-  font-size: 13px;
-  color: #404040;
-}
+    .project-name {
+      @include flexProps(inline-flex, center, unset);
+      @include textProps(700, 13.5px);
 
-.progress-bar-section .progress-indicator-sec {
-  background-color: #eeeeee;
-  height: 18px;
-  width: 100%;
-  border-radius: 8px;
-  position: relative;
-  margin: 0px 4px;
-}
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
 
-.progress-indicator-sec .percent-txt {
-  position: absolute;
-  z-index: 1;
-  left: 47%;
-  font-weight: 700;
-  font-size: 12.5px;
-  color: #2d446e;
-  top: 1.5px;
-}
+  .date-section {
+    margin-bottom: 14px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e7e6e6;
 
-.progress-indicator-sec .active {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #66cc66;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  transition: all 0.5s;
-}
+    .date-txt {
+      @include flexProps(flex, center, unset);
+      @include textProps(500, 13.5px);
 
-.data-card .date-section .date-txt {
-  @include flexProps(flex, center, unset);
-  @include textProps(500, 13.5px);
-}
+      img {
+        margin-right: 6px;
+        height: 18px;
+      }
+    }
+  }
 
-.data-card .date-section .date-txt img {
-  margin-right: 6px;
-}
+  .files-sec {
+    @include flexProps(flex, center, space-between);
 
-.data-card .data-project-sec {
-  @include flexProps(flex, center, space-between);
-}
+    .owner-sec-txt {
+      @include flexProps(flex, center, unset);
+      @include textProps(500, 13.5px);
 
-.data-card .data-project-sec .project-name img {
-  margin-right: 6px;
-}
+      img {
+        margin-right: 5px;
+      }
+    }
 
-.data-card .data-project-sec .project-name {
-  @include flexProps(inline-flex, center, unset);
-  @include textProps(700, 13.5px);
-}
+    .file-txt {
+      @include flexProps(inline-flex, center, unset);
+      @include textProps(700, 13.5px);
 
-.data-card .data-project-sec .id-txt {
-  @include textProps(700, 13.5px);
-}
-
-.data-card .files-sec {
-  @include flexProps(flex, center, space-between);
-}
-
-.owner-sec-txt {
-  @include flexProps(flex, center, unset);
-  @include textProps(500, 13.5px);
-}
-
-.owner-sec-txt img {
-  margin-right: 5px;
-}
-
-.data-card .files-sec .file-txt {
-  @include flexProps(inline-flex, center, unset);
-  @include textProps(700, 13.5px);
-}
-
-.data-card .files-sec .file-txt img {
-  margin-right: 4px;
+      img {
+        margin-right: 4px;
+      }
+    }
+  }
 }

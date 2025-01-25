@@ -9,7 +9,7 @@ const DataCard = ({ cardData, id }) => {
     <div className="data-card">
       <div className="data-project-sec">
         <span className="project-name">
-          <img src={FolderIcon} /> {cardData?.project_name}
+          <img src={FolderIcon} /> {cardData?.project_name ? cardData?.project_name : cardData?.tasks_name}
         </span>
         <span className="id-txt">ID: P-{id + 1}</span>
       </div>

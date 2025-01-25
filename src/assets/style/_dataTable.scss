@@ -1,0 +1,64 @@
+.table-container {
+  box-shadow: 0px 0px 5px 3px #0000001a;
+  border: 2px solid #999999;
+  border-radius: 8px;
+
+  .table-section {
+    border-collapse: collapse;
+    width: 100%;
+
+    .table-head {
+      .table-cell {
+        @include tableCellProps(15px 13px);
+        @include textProps(600, 14px);
+      }
+    }
+
+    .table-row {
+      .table-cell {
+        @include tableCellProps(10px 13px);
+        @include textProps(400, 14px);
+
+        &.success {
+          @include statusProps(#4caf50);
+        }
+
+        &.info {
+          @include statusProps(#4A90E2);
+        }
+
+        &.info2{
+          @include statusProps(#3B78A3);
+        }
+
+        &.secondary {
+          @include statusProps(#B0B0B0);
+        }
+
+        &.secondary2 {
+          @include statusProps(#808080);
+        }
+
+        &.error{
+          @include statusProps(#F42E2E);
+        }
+
+        &.warning{
+          @include statusProps(#CAC000);
+        }
+
+        &.dark{
+          @include statusProps(#3E4B4F);
+        }
+      }
+    }
+  }
+}
+
+.no-border-bottom {
+  border-bottom: none !important;
+}
+
+.no-border-right {
+  border-right: none !important;
+}

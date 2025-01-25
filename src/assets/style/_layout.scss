@@ -1,0 +1,19 @@
+.sidebar-section {
+  position: fixed;
+  width: 46px;
+  background-color: #2d446e;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.navbar-section {
+  position: fixed;
+  background-color: #2d446e;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  left: 0px;
+  padding: 15px;
+  z-index: 1400;
+}

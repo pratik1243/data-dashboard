@@ -14,3 +14,17 @@
   font-weight: $fontWeight;
   font-size: $fontSize;
 }
+
+@mixin tableCellProps($padding) {
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+  padding: $padding;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+@mixin statusProps($backgroundColor) {
+  color: #fff;
+  text-align: center !important;
+  background-color: $backgroundColor;
+}

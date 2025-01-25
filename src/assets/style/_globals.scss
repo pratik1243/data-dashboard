@@ -1,7 +1,56 @@
+
+@import "./mixins";
+
 * {
-    font-family: "Inter", serif;
+  font-family: "Inter", serif;
 }
 
 .main-section {
-  padding: 15px;
+  padding: 13px;
+  margin-left: 44px;
+  margin-top: 60px
+}
+
+.progress-bar-section {
+  @include flexProps(flex, center, unset);
+  margin: 25px 0px;
+
+  .progress-num-txt {
+    font-size: 13px;
+    color: #404040;
+  }
+
+  .progress-indicator-sec {
+    background-color: #eeeeee;
+    height: 18px;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    margin: 0px 4px;
+
+    .percent-txt {
+      position: absolute;
+      z-index: 1;
+      left: 47%;
+      color: #2d446e;
+      top: 1.5px;
+      @include textProps(700, 12.5px);
+    }
+
+    .active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #66cc66;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      transition: all 0.5s;
+      width: 0%;
+    }
+  }
+}
+
+.profile-sec{
+  @include flexProps(flex, center, unset);
 }
