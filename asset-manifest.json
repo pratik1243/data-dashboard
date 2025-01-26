@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/data-dashboard/static/css/main.f9b0f11a.css",
-    "main.js": "/data-dashboard/static/js/main.d73467ba.js",
+    "main.css": "/data-dashboard/static/css/main.23b91653.css",
+    "main.js": "/data-dashboard/static/js/main.f9fc771f.js",
     "static/media/UcCm3FwrK3iLTcvnUwoT9nA2.woff2": "/data-dashboard/static/media/UcCm3FwrK3iLTcvnUwoT9nA2.d76390346e15ccc105e5.woff2",
     "static/media/UcCo3FwrK3iLTcvsYwYL8g.woff2": "/data-dashboard/static/media/UcCo3FwrK3iLTcvsYwYL8g.a29325818e377fb1dae6.woff2",
     "static/media/UcCm3FwrK3iLTcvnUwQT9g.woff2": "/data-dashboard/static/media/UcCm3FwrK3iLTcvnUwQT9g.0f026f80c7a2e78e1e1d.woff2",
@@ -17,20 +17,26 @@
     "static/media/UcCm3FwrK3iLTcvnUwsT9nA2.woff2": "/data-dashboard/static/media/UcCm3FwrK3iLTcvnUwsT9nA2.be1632d1a3fd4adb555a.woff2",
     "static/media/UcCo3FwrK3iLTcvtYwYL8g.woff2": "/data-dashboard/static/media/UcCo3FwrK3iLTcvtYwYL8g.a38432bd3ea1b588d31c.woff2",
     "static/media/file-icon.svg": "/data-dashboard/static/media/file-icon.89d4a8d6ca5e29fde02d050cecbbd118.svg",
+    "static/media/users-icon2.svg": "/data-dashboard/static/media/users-icon2.04adde5892550bcabccd7f2e3d6f6004.svg",
+    "static/media/users-icon.svg": "/data-dashboard/static/media/users-icon.a30a8b4175fc312ce90b7b0951c1b721.svg",
+    "static/media/tasks-icon.svg": "/data-dashboard/static/media/tasks-icon.adfa4d603f54ea9fd9ae3003b8e325bf.svg",
     "static/media/calendar-icon.svg": "/data-dashboard/static/media/calendar-icon.11d12e9ac36f1fce883f5a00bfc7ca76.svg",
     "static/media/action-icon.svg": "/data-dashboard/static/media/action-icon.1611d86712dc57fe26593d83a6f5be0a.svg",
+    "static/media/bell-icon.svg": "/data-dashboard/static/media/bell-icon.09d6f05202d02aa10aa99f8234dc1636.svg",
     "static/media/table-icon.svg": "/data-dashboard/static/media/table-icon.4770eadd4ae035f48a0b0fcfc164ff6c.svg",
     "index.html": "/data-dashboard/index.html",
+    "static/media/status-icon.svg": "/data-dashboard/static/media/status-icon.e24df30e6df6e78d25e5be30d091b163.svg",
     "static/media/folder-icon.svg": "/data-dashboard/static/media/folder-icon.e6209316fdd08e302c021704c3730e51.svg",
+    "static/media/filter-icon.svg": "/data-dashboard/static/media/filter-icon.cf510b246f146e69c18000bb08aa5185.svg",
     "static/media/kanban-icon.svg": "/data-dashboard/static/media/kanban-icon.7dab67181826bdf046d723b892e8cc25.svg",
     "static/media/search-icon.svg": "/data-dashboard/static/media/search-icon.ce5a3b6744b739a8804140df490ada97.svg",
     "static/media/dropdown-icon.svg": "/data-dashboard/static/media/dropdown-icon.f7fc1c9f4d3f296070097743e052fb69.svg",
     "static/media/add-icon.svg": "/data-dashboard/static/media/add-icon.e92d6d7273060b4a759ca179d76f3665.svg",
-    "main.f9b0f11a.css.map": "/data-dashboard/static/css/main.f9b0f11a.css.map",
-    "main.d73467ba.js.map": "/data-dashboard/static/js/main.d73467ba.js.map"
+    "main.23b91653.css.map": "/data-dashboard/static/css/main.23b91653.css.map",
+    "main.f9fc771f.js.map": "/data-dashboard/static/js/main.f9fc771f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9b0f11a.css",
-    "static/js/main.d73467ba.js"
+    "static/css/main.23b91653.css",
+    "static/js/main.f9fc771f.js"
   ]
 }
