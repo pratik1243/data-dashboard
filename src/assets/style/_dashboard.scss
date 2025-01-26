@@ -1,0 +1,99 @@
+
+@import "./mixins";
+
+ .profile-sec {
+    @include flexProps(flex, center, unset);
+  }
+
+  .project-sec{
+    margin-bottom: 45px;
+  }
+  
+  .project-head-sec {
+    @include flexProps(flex, center, space-between);
+  
+    .project-head {
+      @include flexProps(flex, center, unset);
+  
+      .project-text {
+        @include textProps(500, 26px, unset);
+        margin: 0px;
+      }
+  
+      .add-project-btn {
+        @include buttonProps($brand-color, 11px 14px, 30px, unset, unset);
+        @include flexProps(flex, center, center);
+  
+        img {
+          margin-right: 7px;
+        }
+      }
+    }
+  
+    .route-txt {
+      @include textProps(400, 13.5px, unset);
+      
+      .link {
+        cursor: pointer;
+        color: $blue-color;
+      }
+    }
+  }
+  
+  .filter-action-sec {
+    @include flexProps(flex, center, space-between);
+    margin: 20px 0px;
+  
+    .head-txt {
+      margin: 0;
+      color: $brand-color;
+      @include flexProps(flex, center, unset);
+      @include textProps(500, 17px, unset);
+  
+      img{
+        height: 12px;
+        margin-left: 5px;
+      }
+    }
+  
+    .filter-btn-sec {
+      @include flexProps(flex, center, unset);
+  
+      .btn-1 {
+        @include buttonProps($white-color, 8px 9px, unset, 12px, 1px solid $grey-color);
+        @include flexProps(flex, center, center);
+  
+        img{
+          height: 21px;
+        }
+      }
+  
+      .btn-2 {
+        @include buttonProps($white-color, 8px 9px, unset, 10px, 1px solid $grey-color);
+        @include flexProps(flex, center, center);
+  
+        img{
+          height: 21px;
+        }
+      }
+  
+      .btn-3{
+        @include buttonProps($white-color, 7px 9px, unset, unset, unset);
+        @include flexProps(flex, center, center);
+      }
+    }
+  }
+  
+  .task-table-head{
+    min-width: 130px;
+  }
+
+  .status-head{
+    min-width: 100px;
+  }
+  
+  .active-btn {
+    background-color: $brand-color !important;
+    border: 1px solid $brand-color !important;
+  }
+  

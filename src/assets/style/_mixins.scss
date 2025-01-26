@@ -21,8 +21,8 @@
 }
 
 @mixin tableCellProps($padding) {
-  border-bottom: 1px solid #808080;
-  border-right: 1px solid #808080;
+  border-bottom: 1.5px solid $dark-color;
+  border-right: 1.5px solid $dark-color;
   padding: $padding;
   text-align: left;
   text-transform: capitalize;
@@ -31,7 +31,7 @@
 @mixin statusProps($backgroundColor) {
   color: $white-color !important;
   text-align: center !important;
-  background-color: $backgroundColor;
+  background-color: $backgroundColor !important;
 }
 
 @mixin buttonProps($backgroundColor, $padding, $marginLeft, $marginRight, $border) {
@@ -52,4 +52,15 @@
   display: grid;
   grid-template-columns: $columns;
   gap: $gap;
+}
+
+@mixin positionBoxProps($position, $backgroundColor, $top, $left, $right, $bottom, $zIndex, $padding){
+  position: $position;
+  background-color: $backgroundColor;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  z-index: $zIndex;
+  padding: $padding;
 }

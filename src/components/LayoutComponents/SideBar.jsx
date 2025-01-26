@@ -61,7 +61,7 @@ const SideBar = () => {
       {sideBarData.map((ele, index) => {
         return (
           <div key={index} className='side-menu-item'>
-            <img src={ele.icon} />
+            <img src={ele.icon} loading="lazy" />
           </div>
         );
       })}

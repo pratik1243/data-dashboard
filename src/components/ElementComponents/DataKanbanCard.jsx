@@ -21,6 +21,20 @@ const DataKanbanCard = ({ data, statusChips = [] }) => {
             return <DataCard key={index} cardData={ele} id={index} />;
           })}
         </div>
+        <div className="view-more-sec">
+          <div className="view-more-item">
+            <a className="view-more-btn">View More</a>
+          </div>
+          <div className="view-more-item">
+            <a className="view-more-btn">View More</a>
+          </div>
+          <div className="view-more-item">
+            <a className="view-more-btn">View More</a>
+          </div>
+          <div className="view-more-item">
+            <a className="view-more-btn">View More</a>
+          </div>
+        </div>
       </div>
     </div>
   );

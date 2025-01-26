@@ -1,23 +1,17 @@
 @import "./mixins";
-@import "./variables";
 
 .sidebar-section {
-  position: fixed;
-  width: 46px;
-  background-color: $brand-color;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
+  @include positionBoxProps(fixed, $brand-color, 0px, 0px, unset, 0px, 1500, 17px 2px);
   box-shadow: 0px 4px 4px 0px #00000099;
-  z-index: 1500;
-  padding: 17px 2px;
   text-align: center;
+  width: 46px;
 
   .side-menu-item {
     margin-bottom: 16px;
 
     &:first-child img {
       height: 14px;
+      margin-bottom: 6px;
     }
 
     &:nth-child(2) img {
@@ -32,13 +26,7 @@
 }
 
 .navbar-section {
-  position: fixed;
-  background-color: $brand-color;
-  top: 0px;
-  right: 0px;
-  left: 46px;
-  padding: 8.5px 17px;
-  z-index: 1400;
+  @include positionBoxProps(fixed, $brand-color, 0px, 46px, 0px, unset, 1400, 8.5px 17px);
   @include flexProps(flex, center, space-between);
 
   .nav-head-txt {
@@ -64,17 +52,13 @@
       }
 
       .notification-btn {
-        @include buttonProps(#7a89a3, 4px 6px, unset, unset, 1px solid #bfbdbd);
         position: relative;
+        @include buttonProps(#7a89a3, 4px 6px, unset, unset, 1px solid $grey-color);
 
         .badge {
-          position: absolute;
-          top: -4px;
-          right: -11px;
-          background-color: red;
           font-size: 8px;
-          padding: 0.8px 2px;
           border-radius: 7px;
+          @include positionBoxProps(absolute, $red-color, -4px, unset, -11px, unset, unset, 0.8px 2px);
         }
       }
     }

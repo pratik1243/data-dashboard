@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import DataTable from "./ElementComponents/DataTable";
 import DataKanbanCard from "./ElementComponents/DataKanbanCard";
-import { ProjectsData, TasksData } from "../assets/utils/dashboardData";
 import profileIcon from "../assets/images/profile-sec-icon.png";
 import kanbanIcon from "../assets/images/kanban-icon.svg";
 import tableIcon from "../assets/images/table-icon.svg";
 import actionIcon from "../assets/images/action-icon.svg";
 import addIcon from "../assets/images/add-icon.svg";
 import dropDownIcon from "../assets/images/dropdown-icon.svg";
+import filterIcon from "../assets/images/filter-icon.svg";
+import { ProjectsChipsData, ProjectsData, TasksChipsData, TasksData, tableHeadContentArr } from "../assets/utils/dashboardData";
+
 
 const DataDashboard = () => {
   const tableCellContentArr = [
@@ -31,7 +33,7 @@ const DataDashboard = () => {
       content: (value) => {
         return (
           <div className="profile-sec">
-            <img src={profileIcon} />
+            <img src={profileIcon} loading="lazy" />
             {value}
           </div>
         );
@@ -57,7 +59,7 @@ const DataDashboard = () => {
         </span>
       </div>
 
-      <div>
+      <div className="project-sec">
         <div className="filter-action-sec">
           <h3 className="head-txt">
             All Projects <img src={dropDownIcon} />
@@ -75,6 +77,11 @@ const DataDashboard = () => {
             >
               <img src={tableIcon} />
             </button>
+            <button
+              className="btn-2"
+            >
+              <img src={filterIcon} />
+            </button>
             <button className="btn-3">
               <img src={actionIcon} />
             </button>
@@ -84,33 +91,13 @@ const DataDashboard = () => {
         {projectsKanbanShow ? (
           <DataKanbanCard
             data={ProjectsData}
-            statusChips={[
-              {
-                text: "Not Started",
-                status: "secondary",
-                count: "2",
-              },
-              {
-                text: "In Progress",
-                status: "info",
-                count: "3",
-              },
-              {
-                text: "Archived",
-                status: "secondary2",
-                count: "2",
-              },
-              {
-                text: "Completed",
-                status: "success",
-                count: "1",
-              },
-            ]}
+            statusChips={ProjectsChipsData}
           />
         ) : (
           <DataTable
             tableData={ProjectsData}
             tableCellContent={tableCellContentArr}
+            tableHeadContent={tableHeadContentArr}
           />
         )}
       </div>
@@ -133,6 +120,11 @@ const DataDashboard = () => {
             >
               <img src={tableIcon} />
             </button>
+            <button
+              className="btn-2"
+            >
+              <img src={filterIcon} />
+            </button>
             <button className="btn-3">
               <img src={actionIcon} />
             </button>
@@ -142,40 +134,20 @@ const DataDashboard = () => {
         {tasksKanbanShow ? (
           <DataKanbanCard
             data={TasksData}
-            statusChips={[
-              {
-                text: "In Progress",
-                status: "info",
-                count: "3",
-              },
-              {
-                text: "In Review",
-                status: "info2",
-                count: "2",
-              },
-              {
-                text: "In Revision",
-                status: "dark",
-                count: "2",
-              },
-              {
-                text: "Completed",
-                status: "success",
-                count: "1",
-              },
-            ]}
+            statusChips={TasksChipsData}
           />
         ) : (
           <DataTable
             tableData={TasksData}
-            hideColumn={["task_percentage"]}
+            hideColumn={["task_percentage", "status_badge"]}
+            tableHeadContent={tableHeadContentArr}
             tableCellContent={[
               {
                 key: "owner",
                 content: (value) => {
                   return (
                     <div className="profile-sec">
-                      <img src={profileIcon} />
+                      <img src={profileIcon} loading="lazy" />
                       {value}
                     </div>
                   );

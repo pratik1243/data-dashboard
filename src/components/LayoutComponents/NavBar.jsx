@@ -13,23 +13,23 @@ const NavBar = () => {
       <div>
         <ul className="nav-menu-list-sec">
           <li>
-            <img src={searchIcon} />
+            <img src={searchIcon} loading="lazy" />
           </li>
           <li>
-            <img src={listIcon} />
+            <img src={listIcon} loading="lazy" />
           </li>
           <li>
-            <img src={speakerIcon} />
+            <img src={speakerIcon} loading="lazy" />
           </li>
           <li>
             <button className="notification-btn">
-              <img src={notificationIcon} />
+              <img src={notificationIcon} loading="lazy" />
 
               <span className="badge">+99</span>
             </button>
           </li>
           <li>
-            <img src={profileNavIcon} className="nav-profile-btn" />
+            <img src={profileNavIcon} className="nav-profile-btn" loading="lazy" />
           </li>
         </ul>
       </div>

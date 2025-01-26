@@ -1,7 +1,9 @@
+
 .table-container {
   box-shadow: 0px 0px 5px 3px #0000001a;
-  border: 2px solid #999999;
+  border: 2px solid $grey-color;
   border-radius: 8px;
+  overflow-x: auto;
 
   .table-section {
     border-collapse: collapse;
@@ -11,13 +13,23 @@
       .table-cell {
         @include tableCellProps(15px 13px);
         @include textProps(600, 14.5px, unset);
+        white-space: nowrap;
+
+        .table-head-content{
+          @include flexProps(flex, center, unset);
+
+          img{
+            margin-right: 7px;
+          }
+        }
       }
     }
 
     .table-row {
       .table-cell {
         @include tableCellProps(10px 13px);
-        @include textProps(400, 14px, unset);       
+        @include textProps(400, 14px, unset);
+         
       }
     }
   }

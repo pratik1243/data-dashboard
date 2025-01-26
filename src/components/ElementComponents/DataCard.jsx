@@ -3,13 +3,27 @@ import FolderIcon from "../../assets/images/folder-icon.svg";
 import FileIcon from "../../assets/images/file-icon.svg";
 import CalendarIcon from "../../assets/images/calendar-icon.svg";
 import ownerIcon from "../../assets/images/owners-icon.png";
+import { getStatus } from "../../assets/utils/dashboardData";
 
 const DataCard = ({ cardData, id }) => {
+
   return (
     <div className="data-card">
+      {cardData.status_badge && (
+        <div className={`data-card-badge ${getStatus(cardData.status)}`}>
+          {cardData.status}
+          <div className={`arrow-sec ${getStatus(cardData.status)}`}>
+            <div className="arr-inner-sec"></div>
+          </div>
+        </div>
+      )}
+
       <div className="data-project-sec">
         <span className="project-name">
-          <img src={FolderIcon} /> {cardData?.project_name ? cardData?.project_name : cardData?.tasks_name}
+          <img src={FolderIcon} loading="lazy" />{" "}
+          {cardData?.project_name
+            ? cardData?.project_name
+            : cardData?.tasks_name}
         </span>
         <span className="id-txt">ID: P-{id + 1}</span>
       </div>
@@ -26,16 +40,16 @@ const DataCard = ({ cardData, id }) => {
       </div>
       <div className="date-section">
         <span className="date-txt">
-          <img src={CalendarIcon} /> {cardData?.start_date} -{" "}
+          <img src={CalendarIcon} loading="lazy" /> {cardData?.start_date} -{" "}
           {cardData?.end_date}
         </span>
       </div>
       <div className="files-sec">
         <div className="owner-sec-txt">
-          <img src={ownerIcon} /> <span>10+</span>
+          <img src={ownerIcon} loading="lazy" /> <span>10+</span>
         </div>
         <span className="file-txt">
-          <img src={FileIcon} /> <span>14 files</span>
+          <img src={FileIcon} loading="lazy" /> <span>14 files</span>
         </span>
       </div>
     </div>
